@@ -10,7 +10,6 @@ body {
     font-size: 24px;
     color: #181720;
     background-color: #d3d3d3;
-    scroll-behavior: smooth;
 }
 
 header {
@@ -35,14 +34,22 @@ header .logo {
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: #9EF332;
     font-weight: bold;
-    transition: color 0.3s;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s;   
+}
+
+header nav ul li {
+    display: inline-block;
 }
 
 .header-name {
@@ -138,7 +145,8 @@ main section {
     margin: 60px auto;
     padding: 20px;
     gap: 10px;
-    width: 40%;
+    width: 100%;
+    max-width: 900px;
 }
 
 .small-image img {
@@ -148,8 +156,15 @@ main section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.cat-image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
 .cat-image img {
     width: 100%;
+    height: auto;
 }
 
 .project-description {
@@ -159,12 +174,18 @@ main section {
     color: #181720;
 }
 
+.project-description1 {
+    text-align: left;
+    max-width: 600px;
+}
+
 .project-description1 p {
     text-align: left;
     margin: 0 auto;
     max-width: 900px;
     color: #181720;
-    font-size: 28px;
+    font-size: 20px;
+    line-height: 1.6;
     font-weight: 600;
 }
 
@@ -191,8 +212,9 @@ footer {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
+        position: relative;
         align-items: center;
-        padding: 20px;
+        padding: 10px;
         height: auto;
     }
 
@@ -203,12 +225,15 @@ footer {
 
     header nav ul {
         flex-direction: row;
-        gap: 15px;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
         align-items: center;
     }
 
     header nav ul li a {
-        font-size: 18px;
+        font-size: 16px;
+        padding: 5px;
     }
 
     .project-card {
@@ -229,7 +254,6 @@ footer {
         align-items: center;
     }
 
-
     .main-title {
         font-size: 50px;
     }
@@ -248,6 +272,8 @@ footer {
 
     .project-description1 p {
         font-size: 14px;
+        max-width: 100%;
+        text-align: center;
     }
 
     footer p {
@@ -255,18 +281,24 @@ footer {
     }
 
     .content1 {
-        display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .content1 .small-image .project-description1 {
-        flex-direction: column;
+        width: 100%;
     }
 
     .project-description1 h2 {
         font-size: 20px;
         font-weight: 600;
+    }
+
+    .project-description1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .cat-image img {
+        max-width: 100%;
+        height: auto;
     }
     
 }
