@@ -1,0 +1,292 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #181720;
+    color: #d3d3d3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 40px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #9EF332;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+  }
+  
+  .header-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+  }
+  
+  .main-title {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    color: #181720;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  main section {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #d3d3d3;
+  }
+  
+  .projects {
+    padding: 60px 20px;
+    text-align: center;
+    color: #181720;
+  }
+  
+  .projects h1 {
+    font-size: 40px;
+    color: #181720;
+    margin-bottom: 20px;
+  }
+  
+  .projects p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  .project-card {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    align-items: flex-start;
+  }
+  
+  .project-card1 {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    align-items: center;
+  }
+  
+  .large-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .large-image1 img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+  }
+  
+  .content1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 60px auto;
+    padding: 20px;
+    gap: 10px;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .small-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cat-image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .cat-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-description {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 900px;
+    color: #181720;
+  }
+  
+  .project-description1 {
+    text-align: left;
+    max-width: 600px;
+  }
+  
+  .project-description1 p {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 900px;
+    color: #181720;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 600;
+  }
+  
+  .project-description h2 {
+    font-size: 24px;
+    color: #181720;
+    margin-bottom: 10px;
+  }
+  
+  .project-description p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #181720;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #181720;
+    color: #9EF332;
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      position: relative;
+      align-items: center;
+      padding: 10px;
+      height: auto;
+    }
+  
+    header .logo {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+  
+    header nav ul {
+      flex-direction: row;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+    }
+  
+    header nav ul li a {
+      font-size: 16px;
+      padding: 5px;
+    }
+  
+    .project-card {
+      flex-direction: column;
+    }
+  
+    .large-image img,
+    .content {
+      width: 100%;
+    }
+  
+    .project-description {
+      text-align: center;
+    }
+  
+    .info,
+    .contact,
+    .faq {
+      padding: 40px;
+      align-items: center;
+    }
+  
+    .main-title {
+      font-size: 50px;
+    }
+  
+    .project-description h2 {
+      font-size: 18px;
+      color: #181720;
+      margin-bottom: 10px;
+    }
+  
+    .project-description p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #181720;
+    }
+  
+    .project-description1 p {
+      font-size: 14px;
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    footer p {
+      font-size: 14px;
+    }
+  
+    .content1 {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .project-description1 h2 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  
+    .project-description1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .cat-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
