@@ -4,7 +4,7 @@
 
 User Manager on verkkopohjainen käyttäjähallintasovellus, joka tarjoaa toimintoja rekisteröintiin, kirjautumiseen, profiilin päivittämiseen ja tilin poistamiseen. Sovellus on jaettu kahteen osaan:
 
-- **Backend:** Toteutettu Node.js:ssä käyttäen Expressiä ja SQLiteä. API on dokumentoitu Swaggerin (OpenAPI) avulla.
+- **Backend:** Toteutettu Node.js:ssä käyttäen Expressiä ja SQLite3. API on dokumentoitu Swaggerin (OpenAPI) avulla.
 - **Frontend:** Toteutettu Reactilla. Palvelinpuolen integrointiin käytetään automaattisesti luotua OpenAPI-määrittelyyn perustuvaa API-asiakasta.
 
 ## Backend
@@ -17,7 +17,6 @@ User Manager on verkkopohjainen käyttäjähallintasovellus, joka tarjoaa toimin
   - **Swagger UI:** Vuorovaikutteinen dokumentaatio on saatavilla osoitteessa: [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
   - **OpenAPI JSON:** Spesifikaatio saatavilla osoitteessa: [http://localhost:3000/openapi.json](http://localhost:3000/openapi.json)
 
-Translated with DeepL.com (free version)
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
